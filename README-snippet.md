@@ -1,31 +1,18 @@
-# Exercise 3 — The Cowork Relay (teams of 3–4, 25 min)
+# (Paste-into-README snippet — delete this file after use)
 
-**Goal:** learn to write agent briefs by *critiquing each other's* — without needing
-every participant to have Cowork access. (Only the facilitator demos live; this
-exercise is about the brief-writing skill.)
+Suggested "Repo map" section for your existing root README:
 
-## Setup
-Print or share the scenario cards below. Each team gets one.
+---
 
-**Scenario cards:**
-- A: A shared drive folder of 200 club photos, randomly named, spanning 3 years and
-  a dozen events. Make it navigable.
-- B: 30 PDF invoices from 6 vendors. Finance needs a quarterly spending summary.
-- C: A folder of 15 user-interview transcripts. The team needs the top recurring
-  complaints, with evidence.
-- D: Your personal Downloads folder (be honest). Make it survivable.
+## Repo map
 
-## Steps
-1. **(8 min)** Each team writes a Cowork brief for its scenario: outcome, "done"
-   criteria, and rules for ambiguity and safety.
-2. **(8 min)** **The relay:** teams swap briefs. Your job now is to be a *malicious
-   genie* — find every way the brief-as-written could go wrong if followed
-   literally. (Deleted files? Guessed numbers? 4 hours on a side quest?)
-3. **(5 min)** Briefs return home. Teams patch the holes.
-4. **(4 min)** Each team reads its best "found failure" aloud.
+| Folder | What's inside | Start here if… |
+|---|---|---|
+| [`guide/`](guide/) | The interactive guide — 9 modules with quizzes. **The hub for everything else.** | …you're new. Open `guide/index.html` in a browser. |
+| [`prompts/`](prompts/) | Copy-paste prompt templates for studying, career, writing, research, and everyday life. | …you want results in the next five minutes. |
+| [`claude-code-demos/`](claude-code-demos/) | Hands-on Claude Code exercises with sample projects, from first session to building a portfolio site. | …you're ready to try the terminal. |
+| [`cowork-workflows/`](cowork-workflows/) | Step-by-step Cowork recipes with fake practice files included. | …you want to delegate file work safely. |
+| [`troubleshooting/`](troubleshooting/) | Symptom-based FAQs for every tool, plus how to escalate. | …something isn't working. |
+| [`workshop/`](workshop/) | Facilitator guide, slide deck, exercises, and handouts for running this as a live session. | …you're teaching this to a group. |
 
-## Debrief questions
-- What rule appeared in almost every patched brief? (Usually: "don't delete —
-  quarantine" and "flag, don't guess.")
-- Connect it back: these are the same rules in [`cowork-workflows/`](../../cowork-workflows/) —
-  now you know *why* they're there.
+Each folder's README links back to the guide module it pairs with.

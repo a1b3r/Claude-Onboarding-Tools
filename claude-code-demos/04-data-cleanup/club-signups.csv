@@ -1,0 +1,41 @@
+name,email,signup_date,membership_tier,paid
+Maya Okafor,maya.okafor@example.edu,2026-01-14,Basic,yes
+jordan reyes,jordan.reyes@example.edu,01/15/2026,basic,yes
+Sam Whitfield,sam.whitfield@example.edu,2026-01-15,Plus,yes
+Priya Natarajan,priya.n@example.edu,Jan 16 2026,PLUS,no
+Maya Okafor,maya.okafor@example.edu,2026-01-14,Basic,yes
+Diego Fuentes,,2026-01-18,Basic,yes
+Aisha Bello,aisha.bello@example.edu,2026/01/19,plus,yes
+TOMMY NGUYEN,tommy.nguyen@example.edu,2026-01-20,Basc,yes
+Lena Hoffmann,lena.hoffmann@example.edu,2026-01-21,Basic,no
+Marcus Webb,555-0142,2026-01-22,Plus,yes
+Ruth Adler,ruth.adler@example.edu,01-23-2026,Basic,yes
+jordan Reyes,jordan.reyes@example.edu,2026-01-15,Basic,yes
+Chen Wei,chen.wei@example.edu,2026-01-25,plus,yes
+Fatima Al-Sayed,fatima.alsayed@example.edu,2026-01-26,Plus,no
+Oliver Grant,oliver.grant@example.edu,Jan 27, 2026,Basic,yes
+Nadia Petrova,nadia.petrova@example.edu,2026-01-28,Basic,yes
+sam whitfield,sam.whitfield@example.edu,2026-01-15,plus,yes
+Ibrahim Diallo,ibrahim.diallo@example.edu,2026-02-01,Pluss,yes
+Grace Kim,grace.kim@example.edu,2026-02-02,Basic,
+Hugo Martinez,hugo.martinez@example.edu,02/03/2026,Basic,yes
+Yuki Tanaka,yuki.tanaka@example.edu,2026-02-04,Plus,yes
+Amara Osei,amara.osei@example.edu,2026-02-05,basic,yes
+Felix Brandt,felix.brandt@example.edu,2026-02-06,Basic,no
+Zoe Carmichael,zoe.c@example.edu,Feb 7 2026,Plus,yes
+Dmitri Volkov,dmitri.volkov@example.edu,2026-02-08,Basic,yes
+Hannah Liu,hannah.liu@example.edu,2026-02-09,plus,yes
+Kwame Mensah,kwame.mensah@example.edu,2026-02-10,Basic,yes
+Isla MacLeod,,2026-02-11,Basic,yes
+Rafael Sousa,rafael.sousa@example.edu,02-12-2026,Plus,no
+Noor Hassan,noor.hassan@example.edu,2026-02-13,Basic,yes
+Erik Johansson,erik.johansson@example.edu,2026-02-14,basic,yes
+Tara Singh,tara.singh@example.edu,2026-02-15,Plus,yes
+Leo Moretti,leo.moretti@example.edu,Feb 16, 2026,Basic,yes
+Bianca Ferreira,bianca.ferreira@example.edu,2026-02-17,plus,no
+Owen Gallagher,owen.gallagher@example.edu,2026-02-18,Basic,yes
+Mei Zhang,mei.zhang@example.edu,2026-02-19,Plus,yes
+ANNA KOWALSKI,anna.kowalski@example.edu,2026-02-20,Basic,yes
+Tariq Aziz,tariq.aziz@example.edu,02/21/2026,Basic,yes
+Sofia Russo,sofia.russo@example.edu,2026-02-22,plus,yes
+Jonas Berg,jonas.berg@example.edu,2026-02-23,Basic,yes
