@@ -2,7 +2,7 @@
 
 A practical training toolkit for helping people use Claude Chat, Claude Code, and Claude Cowork effectively.
 
-This repository includes beginner-friendly guides, sample prompts, Claude Code demos, Claude Cowork workflows, troubleshooting FAQs, and workshop materials designed for enterprise or university users.
+This repository includes beginner-friendly guides, sample prompts, Claude Code demos, Claude Cowork workflows, troubleshooting FAQs, and workshop materials.
 
 ## Skills Demonstrated
 
