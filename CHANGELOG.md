@@ -4,6 +4,8 @@ All notable changes to this repo. Dates use YYYY-MM-DD.
 
 ## 2026-06-10
 
+- Added root `README.md` with repo map and project structure; removed
+  `README-snippet.md` (folded into the README).
 - Initial release.
 - Interactive guide (`guide/index.html`): 9 modules, 27 quiz questions —
   ecosystem map, Claude Chat, prompting, Cowork, Claude Code & CLAUDE.md,
