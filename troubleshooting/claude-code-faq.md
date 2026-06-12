@@ -1,6 +1,6 @@
 # FAQ — Claude Code
 
-> 📖 Pairs with [Module 05](../guide/index.html#m5).
+> 📖 Pairs with [Module 06](../guide/index.html#m6).
 
 ## "Install fails / `claude` isn't recognized"
 (1) Confirm Node.js is installed: `node --version` — if not, install the LTS from

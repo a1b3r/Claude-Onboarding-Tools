@@ -1,6 +1,6 @@
 # FAQ — Claude Chat
 
-> 📖 Pairs with [Module 02](../guide/index.html#m2).
+> 📖 Pairs with [Module 03](../guide/index.html#m3).
 
 ## "I hit a usage limit / Claude says come back later"
 Usage limits exist on all plans and vary by plan and model; they reset over time.
@@ -26,7 +26,7 @@ one-off continuation → just link/paste the relevant part of the old chat.
 This is hallucination — fluent, plausible, false. It happens most with: niche facts,
 citations, current events, and arithmetic at a glance. Countermeasures: ask Claude to
 search the web for anything current or factual; ask "how confident are you, and what
-would you check?"; verify citations yourself, always (guide, Module 09).
+would you check?"; verify citations yourself, always (guide, Module 10).
 
 ## "It won't help with something I think is reasonable"
 Occasionally Claude declines or hedges more than the situation warrants. Rephrasing

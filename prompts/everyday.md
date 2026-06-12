@@ -1,6 +1,6 @@
 # Prompts: Everyday Life
 
-> 📖 Pairs with [Module 02](../guide/index.html#m2). Post-grad life has a lot of
+> 📖 Pairs with [Module 03](../guide/index.html#m3). Student life has a lot of
 > first-times. These help.
 
 ## The email un-staller

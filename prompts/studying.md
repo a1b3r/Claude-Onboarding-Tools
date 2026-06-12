@@ -1,6 +1,6 @@
 # Prompts: Studying & Learning
 
-> 📖 Pairs with [Module 08](../guide/index.html#m8). Pattern: role · process · standard · guardrail.
+> 📖 Pairs with [Module 09](../guide/index.html#m9). Pattern: role · process · standard · guardrail.
 
 ## The Socratic study partner
 *Best for: exam prep. Active recall beats re-reading.*
@@ -52,4 +52,4 @@ terminology.
 ```
 
 > **Integrity note:** these prompts are built for *learning* the material, not bypassing
-> it. Check your institution's AI policy — guide, [Module 09](../guide/index.html#m9).
+> it. Check your institution's AI policy — guide, [Module 10](../guide/index.html#m10).

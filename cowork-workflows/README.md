@@ -1,6 +1,6 @@
 # Cowork Workflows
 
-> 📖 Pairs with [Module 04 (Claude Cowork)](../guide/index.html#m4).
+> 📖 Pairs with [Module 05 (Claude Cowork)](../guide/index.html#m5).
 
 Each workflow is a **recipe**: a situation, a brief you can adapt, the expected
 outcome, and a review checklist. The `sample-files/` folder contains fake practice

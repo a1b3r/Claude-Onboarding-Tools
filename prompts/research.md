@@ -1,7 +1,7 @@
 # Prompts: Research & Sources
 
-> 📖 Pairs with [Module 02](../guide/index.html#m2) (web search, file uploads) and
-> [Module 09](../guide/index.html#m9) (verification).
+> 📖 Pairs with [Module 03](../guide/index.html#m3) (web search, file uploads) and
+> [Module 10](../guide/index.html#m10) (verification).
 >
 > ⚠️ **The iron rule of AI-assisted research:** verify every citation before it enters
 > your work. AI can hallucinate sources that look perfectly real.

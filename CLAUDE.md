@@ -1,7 +1,7 @@
 # CLAUDE.md — claude-onboarding
 
-This repo is an onboarding curriculum for the Claude ecosystem, aimed at recent
-graduates from all majors. The interactive guide is the hub; everything else is
+This repo is an onboarding curriculum for the Claude ecosystem, aimed at current
+undergraduate students from all majors. The interactive guide is the hub; everything else is
 the lab.
 
 ## Project structure
@@ -23,7 +23,7 @@ the lab.
 - **Prompt templates** always follow the four-part pattern: role, process,
   standard, guardrail. Show templates in fenced code blocks with [placeholders].
 - **Module cross-links.** Every doc links back to its guide module at the top,
-  e.g. `> 📖 Pairs with [Module 03 of the guide](../guide/index.html#m3)`.
+  e.g. `> 📖 Pairs with [Module 04 of the guide](../guide/index.html#m4)`.
 - **Sample data is always fake.** Names, vendors, and figures in
   `sample-files/` and demo data are invented. Never replace them with real data.
 - **No volatile facts.** Plan pricing, usage limits, and availability change
@@ -46,5 +46,7 @@ the lab.
 ## Commands
 
 - Preview the guide: open `guide/index.html` in a browser (no server needed).
-- Validate guide structure after edits: confirm the number of `data-quiz`
-  blocks matches the rail checklist items and the hero tag counts.
+- Validate after edits: `python scripts/check_guide.py` (quiz blocks vs. rail
+  checklist vs. hero tag counts) and `python scripts/check_links.py` (relative
+  Markdown links and guide anchors). CI runs both on every push and PR
+  (`.github/workflows/checks.yml`).

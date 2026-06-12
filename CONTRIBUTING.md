@@ -19,7 +19,7 @@ these tools?
 
 ## Ground rules
 
-1. **Audience:** recent grads of any major. No unexplained jargon.
+1. **Audience:** current undergrads of any major. No unexplained jargon.
 2. **Accuracy:** don't hardcode prices, limits, or availability — link to
    official docs instead. Date-stamp anything time-sensitive.
 3. **Sample data must be fake.** No real names, emails, or financial data.

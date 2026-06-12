@@ -1,18 +1,18 @@
 # Claude Onboarding Tools
 
-An onboarding curriculum for the Claude ecosystem, aimed at recent graduates from all
+An onboarding curriculum for the Claude ecosystem, aimed at current undergraduate students from all
 majors — no technical background required. The interactive guide is the hub; everything
 else is the lab.
 
 **New here?** Open [`guide/index.html`](guide/index.html) in your browser (no install,
-no server — it's a single self-contained file) and work through the 9 modules. Each
+no server — it's a single self-contained file) and work through the 10 modules. Each
 folder below pairs with a module in the guide.
 
 ## Repo map
 
 | Folder | What's inside | Start here if… |
 |---|---|---|
-| [`guide/`](guide/) | The interactive guide — 9 modules with quizzes. **The hub for everything else.** | …you're new. Open `guide/index.html` in a browser. |
+| [`guide/`](guide/) | The interactive guide — 10 modules with quizzes. **The hub for everything else.** | …you're new. Open `guide/index.html` in a browser. |
 | [`prompts/`](prompts/) | Copy-paste prompt templates for studying, career, writing, research, and everyday life. | …you want results in the next five minutes. |
 | [`claude-code-demos/`](claude-code-demos/) | Hands-on Claude Code exercises with sample projects, from first session to building a portfolio site. | …you're ready to try the terminal. |
 | [`cowork-workflows/`](cowork-workflows/) | Step-by-step Cowork recipes with fake practice files included. | …you want to delegate file work safely. |

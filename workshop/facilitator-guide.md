@@ -55,7 +55,7 @@ to improve, something to study. We'll work on real things, not toy examples.
 2. **Account/login friction eats time.** That's why it's in the invite email; have a
    buddy-up rule (share a screen) for anyone stuck.
 3. **The over-trusters worry me more than the skeptics.** Plant the citation-
-   verification habit hard (Module 09).
+   verification habit hard (Module 10).
 4. **"Is this cheating?"** Don't dodge: policies differ by school/employer; the
    skill is knowing yours and using AI to learn, not to bypass learning. Exercise 4
    exists for this conversation.

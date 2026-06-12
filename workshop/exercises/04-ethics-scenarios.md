@@ -39,4 +39,4 @@ What's your responsibility, and what would you change about the process?
 - Almost every scenario resolves to the same three moves: **know the written policy,
   disclose when in doubt, and never submit what you can't defend.**
 - For #3 specifically, land the rule: personal data needs authorization *before*
-  pasting — see guide [Module 09](../../guide/index.html#m9).
+  pasting — see guide [Module 10](../../guide/index.html#m10).

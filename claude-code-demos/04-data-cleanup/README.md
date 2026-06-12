@@ -24,7 +24,7 @@ hiding in it.
 5. **Analyze:** *"From the clean file: how many members per tier, sign-ups per month,
    and what percentage of rows had at least one problem?"*
 6. **Verify one thing yourself.** Open both CSVs and spot-check 3 rows. Trust, but
-   verify — that habit is the real lesson (guide, Module 09).
+   verify — that habit is the real lesson (guide, Module 10).
 
 ## Done when
 

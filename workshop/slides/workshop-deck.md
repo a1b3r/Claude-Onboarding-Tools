@@ -68,9 +68,9 @@ Brief it like you'd brief a person.
 
 **Weak:** "Write a cover letter."
 
-**Strong:** "Write a cover letter for an entry-level marketing
-analyst role at a mid-size healthcare company. I'm a recent econ
-grad; resume attached. Confident but not arrogant, under 300
+**Strong:** "Write a cover letter for an marketing analyst
+internship at a mid-size healthcare company. I'm a junior
+majoring in econ; resume attached. Confident but not arrogant, under 300
 words, mention my internship analytics project."
 
 ---
@@ -97,7 +97,7 @@ If not, you delegated the learning, not just the typing.
 
 ## Where to go next
 
-- 📖 The interactive guide (9 modules + quizzes) — in the repo
+- 📖 The interactive guide (10 modules + quizzes) — in the repo
 - 📋 Prompt library — `prompts/`
 - 🧪 Hands-on demos — `claude-code-demos/`, `cowork-workflows/`
 - 🆘 Stuck? `troubleshooting/`

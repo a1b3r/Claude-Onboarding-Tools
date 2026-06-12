@@ -1,9 +1,9 @@
 # Claude Code Demos
 
-> 📖 Pairs with [Module 05 (Claude Code & CLAUDE.md)](../guide/index.html#m5).
+> 📖 Pairs with [Module 06 (Claude Code & CLAUDE.md)](../guide/index.html#m6).
 
 Four hands-on exercises, easiest first. None require prior coding experience — demo 01
-and 04 are specifically designed for non-CS grads.
+and 04 are specifically designed for non-CS majors.
 
 ## Setup (once)
 

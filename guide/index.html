@@ -92,6 +92,13 @@ a:hover{color:var(--pen-dark)}
   font-family:var(--mono);font-size:.8rem;color:var(--ink-soft);
 }
 .rail .score-chip strong{color:var(--ink);font-size:1.05rem;display:block}
+.reset-btn{
+  display:block;margin-top:10px;padding:0;
+  font-family:var(--mono);font-size:.72rem;color:var(--ink-soft);
+  background:none;border:none;cursor:pointer;
+  text-decoration:underline;text-underline-offset:3px;
+}
+.reset-btn:hover{color:var(--bad)}
 
 /* ---------- hero ---------- */
 .hero{padding:72px 0 56px;border-bottom:2px solid var(--ink)}
@@ -236,7 +243,7 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding:26px 0 48px;font
     <div class="brand"><span>Claude&nbsp;101</span> · Orientation</div>
     <div class="progress-wrap" aria-hidden="false">
       <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
-      <div class="progress-label" id="progressLabel">0 / 9 modules</div>
+      <div class="progress-label" id="progressLabel">0 / 10 modules</div>
     </div>
   </div>
 </header>
@@ -246,30 +253,31 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding:26px 0 48px;font
     <h2>Your checklist</h2>
     <ol id="railList">
       <li data-rail="m1"><a href="#m1"><span class="check" aria-hidden="true"></span>The ecosystem map</a></li>
-      <li data-rail="m2"><a href="#m2"><span class="check" aria-hidden="true"></span>Claude Chat</a></li>
-      <li data-rail="m3"><a href="#m3"><span class="check" aria-hidden="true"></span>Prompting that works</a></li>
-      <li data-rail="m4"><a href="#m4"><span class="check" aria-hidden="true"></span>Claude Cowork</a></li>
-      <li data-rail="m5"><a href="#m5"><span class="check" aria-hidden="true"></span>Claude Code &amp; CLAUDE.md</a></li>
-      <li data-rail="m6"><a href="#m6"><span class="check" aria-hidden="true"></span>Connectors &amp; MCP</a></li>
-      <li data-rail="m7"><a href="#m7"><span class="check" aria-hidden="true"></span>Claude Design</a></li>
-      <li data-rail="m8"><a href="#m8"><span class="check" aria-hidden="true"></span>Student starter pack</a></li>
-      <li data-rail="m9"><a href="#m9"><span class="check" aria-hidden="true"></span>Ethics &amp; responsible use</a></li>
+      <li data-rail="m2"><a href="#m2"><span class="check" aria-hidden="true"></span>Picking a model</a></li>
+      <li data-rail="m3"><a href="#m3"><span class="check" aria-hidden="true"></span>Claude Chat</a></li>
+      <li data-rail="m4"><a href="#m4"><span class="check" aria-hidden="true"></span>Prompting that works</a></li>
+      <li data-rail="m5"><a href="#m5"><span class="check" aria-hidden="true"></span>Claude Cowork</a></li>
+      <li data-rail="m6"><a href="#m6"><span class="check" aria-hidden="true"></span>Claude Code &amp; CLAUDE.md</a></li>
+      <li data-rail="m7"><a href="#m7"><span class="check" aria-hidden="true"></span>Connectors &amp; MCP</a></li>
+      <li data-rail="m8"><a href="#m8"><span class="check" aria-hidden="true"></span>Claude Design</a></li>
+      <li data-rail="m9"><a href="#m9"><span class="check" aria-hidden="true"></span>Student starter pack</a></li>
+      <li data-rail="m10"><a href="#m10"><span class="check" aria-hidden="true"></span>Ethics &amp; responsible use</a></li>
       <li data-rail="wrap"><a href="#wrap"><span class="check" aria-hidden="true"></span>Wrap-up &amp; resources</a></li>
     </ol>
-    <div class="score-chip">Quiz score<strong id="railScore">0 / 27</strong></div>
+    <div class="score-chip">Quiz score<strong id="railScore">0 / 30</strong><button class="reset-btn" id="resetProgress" type="button">Reset progress</button></div>
   </nav>
 
   <main>
   <!-- BODY SECTIONS APPENDED BELOW -->
   <section class="hero">
-    <p class="eyebrow">New Hire Edition · For graduates of every major</p>
+    <p class="eyebrow">Student Edition · For undergrads of every major</p>
     <h1>Welcome to the <span class="hl">Claude ecosystem</span>.</h1>
     <p>Claude is an AI assistant made by Anthropic — and it's more than a chat window. There's a tool for asking questions, a tool for handing off whole chunks of work, and a tool for building software. Knowing which door to walk through is half the skill.</p>
-    <p>This guide takes about 45 minutes (or do a few modules at a time). Each module ends with a short quiz, and your checklist fills in as you go. No technical background required.</p>
+    <p>This guide takes about 50 minutes (or do a few modules at a time). Each module ends with a short quiz, and your checklist fills in as you go — progress is saved in this browser, so you can leave and pick up where you stopped. No technical background required.</p>
     <div class="hero-meta">
-      <span class="tag">9 modules</span>
-      <span class="tag">27 quiz questions</span>
-      <span class="tag">~45 min</span>
+      <span class="tag">10 modules</span>
+      <span class="tag">30 quiz questions</span>
+      <span class="tag">~50 min</span>
       <span class="tag">Zero jargon left undefined</span>
     </div>
   </section>
@@ -363,6 +371,100 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding:26px 0 48px;font
   <!-- ================= MODULE 2 ================= -->
   <section class="module" id="m2">
     <div class="module-kicker"><span class="module-num">MODULE 02</span></div>
+    <h2>Picking a model: Haiku, Sonnet, Opus &amp; Fable</h2>
+    <p class="lede">A "model" is the AI brain behind every Claude tool — and Anthropic makes several, in different sizes. Chat, Cowork, and Code all have a <span class="hl">model picker</span>, so knowing the lineup means you stop spending your plan's usage (and your time) on mismatched tasks.</p>
+
+    <h3>The lineup, smallest to largest</h3>
+    <p>The names follow a poetry theme, and the poem's length is the mnemonic: a <em>haiku</em> is three lines, a <em>sonnet</em> is fourteen, an <em>opus</em> is a composer's major work — and the newest class, <em>Fable</em>, sits above them all.</p>
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-tag">Fast &amp; light</span>
+        <h4>Haiku</h4>
+        <p>The smallest, fastest, most affordable class. Near-instant answers for quick lookups, short summaries, and simple repetitive tasks.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag">Everyday balance</span>
+        <h4>Sonnet</h4>
+        <p>The middle class — the best mix of speed and intelligence. A great default for most questions, drafts, and assignments.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag">Deep work</span>
+        <h4>Opus</h4>
+        <p>The heavyweight class. The strongest reasoning for genuinely hard problems: long research, complex analysis, big coding projects. Slower, and uses more of your plan's usage.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag">The frontier</span>
+        <h4>Fable</h4>
+        <p>The newest class, introduced above Opus (as of mid-2026) as Anthropic's most capable model. Reach for it when the problem is at the edge of what AI can do.</p>
+      </div>
+    </div>
+
+    <h3>Which one, when?</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>The task feels like…</th><th>Reach for</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>"Quick question"</td><td>Haiku</td><td>Speed matters more than depth — a fast model answers before a big one finishes warming up.</td></tr>
+          <tr><td>"Normal day's work"</td><td>Sonnet</td><td>Smart enough for nearly everything, fast enough to iterate with.</td></tr>
+          <tr><td>"This is genuinely hard"</td><td>Opus or Fable</td><td>Multi-step reasoning, long documents, tricky code — here quality beats speed.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Three things worth knowing</h3>
+    <ul>
+      <li><strong>Models have versions.</strong> Names like "Sonnet 4.6" or "Opus 4.8" mean class + generation — a higher number is a newer release of that class. The default in the picker is usually a safe choice.</li>
+      <li><strong>Bigger isn't always better.</strong> Asking the largest model "what's the capital of France?" works fine — it's just slower and spends more of your usage for the same answer. Match the model to the task.</li>
+      <li><strong>Usage limits are real.</strong> Every plan has limits, and larger models consume them faster. If you hit a limit mid-project, switching to a smaller model often keeps you working.</li>
+    </ul>
+
+    <div class="note">
+      <p><strong>The lineup changes.</strong> New versions ship regularly, and which models your plan includes varies — the live model list is at <a href="https://docs.claude.com/en/docs/about-claude/models/overview">docs.claude.com</a> and plan details at <a href="https://support.claude.com">support.claude.com</a>.</p>
+    </div>
+
+    <div class="quiz" data-quiz="m2">
+      <div class="quiz-head"><h3>Quick check — Module 02</h3><span class="quiz-score" data-score>0 / 3 answered</span></div>
+      <p class="quiz-sub">Pick one answer per question.</p>
+
+      <div class="q">
+        <p class="q-text"><span class="q-num">Q1</span>The night before a quiz, you want fast plain-English definitions of ten terms from your notes. Which model class fits best?</p>
+        <div class="opts" data-answer="0">
+          <button class="opt"><span class="key">A</span>Haiku — it's a quick, simple task where speed matters most</button>
+          <button class="opt"><span class="key">B</span>Opus — always use the most powerful model available</button>
+          <button class="opt"><span class="key">C</span>Fable — definitions are at the frontier of AI capability</button>
+          <button class="opt"><span class="key">D</span>None — Claude can't define terms</button>
+        </div>
+        <div class="feedback" data-good="Right. Quick, simple, repetitive — exactly what the fastest class is for. You get answers sooner and save your plan's usage." data-bad="Defining terms is quick, simple work — that's Haiku territory. Bigger models would give the same definitions, just slower and at a higher usage cost."></div>
+      </div>
+
+      <div class="q">
+        <p class="q-text"><span class="q-num">Q2</span>You're analyzing a 60-page policy report for your thesis and need Claude to trace the argument and find logical gaps. Which class fits?</p>
+        <div class="opts" data-answer="2">
+          <button class="opt"><span class="key">A</span>Haiku — long documents need the fastest model</button>
+          <button class="opt"><span class="key">B</span>Whichever model answers first</button>
+          <button class="opt"><span class="key">C</span>Opus (or Fable) — deep multi-step reasoning is what the largest classes are built for</button>
+          <button class="opt"><span class="key">D</span>It makes no difference which model you pick</button>
+        </div>
+        <div class="feedback" data-good="Exactly. When the task is genuinely hard — long documents, multi-step reasoning — the largest classes earn their extra time and usage." data-bad="This is deep, multi-step reasoning over a long document — the kind of task Opus (and Fable) exist for. Quality beats speed here."></div>
+      </div>
+
+      <div class="q">
+        <p class="q-text"><span class="q-num">Q3</span>What's the actual trade-off as you move up from Haiku to Sonnet to Opus?</p>
+        <div class="opts" data-answer="1">
+          <button class="opt"><span class="key">A</span>There is no trade-off — bigger is better for everything</button>
+          <button class="opt"><span class="key">B</span>More capability on hard problems, but slower responses and faster consumption of your plan's usage</button>
+          <button class="opt"><span class="key">C</span>Bigger models know newer information; smaller ones are out of date</button>
+          <button class="opt"><span class="key">D</span>Smaller models are less safe to use</button>
+        </div>
+        <div class="feedback" data-good="Correct. Capability versus speed-and-usage is the whole trade — which is why matching the model to the task is the skill." data-bad="The trade is capability vs. speed and usage: larger classes reason better on hard problems but respond slower and consume your plan's limits faster."></div>
+      </div>
+      <div class="quiz-result" data-result></div>
+    </div>
+  </section>
+
+  <!-- ================= MODULE 3 ================= -->
+  <section class="module" id="m3">
+    <div class="module-kicker"><span class="module-num">MODULE 03</span></div>
     <h2>Claude Chat: your everyday workspace</h2>
     <p class="lede">Claude Chat (claude.ai, plus the mobile and desktop apps) is where most people start. It's a conversation — but a few features turn it from "chatbot" into a genuine work tool.</p>
 
@@ -390,8 +492,8 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding:26px 0 48px;font
       <p><strong>Try it now:</strong> Upload a class paper or your resume and ask: "Give me three specific, honest improvements — don't just praise it."</p>
     </div>
 
-    <div class="quiz" data-quiz="m2">
-      <div class="quiz-head"><h3>Quick check — Module 02</h3><span class="quiz-score" data-score>0 / 3 answered</span></div>
+    <div class="quiz" data-quiz="m3">
+      <div class="quiz-head"><h3>Quick check — Module 03</h3><span class="quiz-score" data-score>0 / 3 answered</span></div>
       <p class="quiz-sub">Pick one answer per question.</p>
 
       <div class="q">
@@ -430,9 +532,9 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding:26px 0 48px;font
     </div>
   </section>
 
-  <!-- ================= MODULE 3 ================= -->
-  <section class="module" id="m3">
-    <div class="module-kicker"><span class="module-num">MODULE 03</span></div>
+  <!-- ================= MODULE 4 ================= -->
+  <section class="module" id="m4">
+    <div class="module-kicker"><span class="module-num">MODULE 04</span></div>
     <h2>Prompting that works</h2>
     <p class="lede">A "prompt" is just what you type to Claude. The single best mental model, straight from Anthropic's own guidance: treat Claude like a <span class="hl">brilliant new colleague</span> who knows a lot but knows nothing about <em>your</em> situation. Brief it the way you'd brief a person.</p>
 
@@ -453,7 +555,7 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding:26px 0 48px;font
       </div>
       <div class="prompt-box strong">
         <span class="pb-label">Strong</span>
-        "Write a cover letter for an entry-level marketing analyst role at a mid-size healthcare company. I'm a recent economics grad; my resume is attached. Confident but not arrogant, under 300 words, and mention my internship analytics project."
+        "Write a cover letter for a marketing analyst internship at a mid-size healthcare company. I'm a junior majoring in economics; my resume is attached. Confident but not arrogant, under 300 words, and mention my internship analytics project."
       </div>
     </div>
     <div class="prompt-pair">
@@ -477,8 +579,8 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding:26px 0 48px;font
       <p><strong>Go deeper:</strong> Anthropic publishes a full prompt-engineering guide at <a href="https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview">docs.claude.com</a>. It's written for developers but the principles apply to everyday chat too.</p>
     </div>
 
-    <div class="quiz" data-quiz="m3">
-      <div class="quiz-head"><h3>Quick check — Module 03</h3><span class="quiz-score" data-score>0 / 3 answered</span></div>
+    <div class="quiz" data-quiz="m4">
+      <div class="quiz-head"><h3>Quick check — Module 04</h3><span class="quiz-score" data-score>0 / 3 answered</span></div>
       <p class="quiz-sub">Pick one answer per question.</p>
 
       <div class="q">
@@ -517,9 +619,9 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding:26px 0 48px;font
     </div>
   </section>
 
-  <!-- ================= MODULE 4 ================= -->
-  <section class="module" id="m4">
-    <div class="module-kicker"><span class="module-num">MODULE 04</span></div>
+  <!-- ================= MODULE 5 ================= -->
+  <section class="module" id="m5">
+    <div class="module-kicker"><span class="module-num">MODULE 05</span></div>
     <h2>Claude Cowork: delegating real work</h2>
     <p class="lede">Cowork lives in the Claude desktop app. You give it access to a folder, describe the outcome you want, and it plans and executes the steps — reading files, creating documents, building spreadsheets — then hands you the finished result. Anthropic describes it as "Claude Code for the rest of your work."</p>
 
@@ -552,8 +654,8 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding:26px 0 48px;font
       <p><strong>Heads up:</strong> agentic tools act on real files. The permission prompts exist for a reason — read them, and keep backups of anything you can't afford to lose.</p>
     </div>
 
-    <div class="quiz" data-quiz="m4">
-      <div class="quiz-head"><h3>Quick check — Module 04</h3><span class="quiz-score" data-score>0 / 3 answered</span></div>
+    <div class="quiz" data-quiz="m5">
+      <div class="quiz-head"><h3>Quick check — Module 05</h3><span class="quiz-score" data-score>0 / 3 answered</span></div>
       <p class="quiz-sub">Pick one answer per question.</p>
 
       <div class="q">
@@ -592,9 +694,9 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding:26px 0 48px;font
     </div>
   </section>
 
-  <!-- ================= MODULE 5 ================= -->
-  <section class="module" id="m5">
-    <div class="module-kicker"><span class="module-num">MODULE 05</span></div>
+  <!-- ================= MODULE 6 ================= -->
+  <section class="module" id="m6">
+    <div class="module-kicker"><span class="module-num">MODULE 06</span></div>
     <h2>Claude Code &amp; the art of CLAUDE.md</h2>
     <p class="lede">Claude Code is the power tool of the ecosystem: an agent that works inside a real software project. Even if you didn't study computer science, it's worth knowing — plenty of analysts, designers, and marketers use it for data work and automation. And its most important habit, the CLAUDE.md file, teaches a lesson that applies everywhere.</p>
 
@@ -647,8 +749,8 @@ claude</code></pre>
       <p><strong>The transferable lesson:</strong> whether it's a CLAUDE.md, Project instructions in Chat, or a Cowork brief — <em>written-down context you provide once pays off in every future session.</em> The people who get the most out of AI tools are the best briefers, not the best typists.</p>
     </div>
 
-    <div class="quiz" data-quiz="m5">
-      <div class="quiz-head"><h3>Quick check — Module 05</h3><span class="quiz-score" data-score>0 / 3 answered</span></div>
+    <div class="quiz" data-quiz="m6">
+      <div class="quiz-head"><h3>Quick check — Module 06</h3><span class="quiz-score" data-score>0 / 3 answered</span></div>
       <p class="quiz-sub">Pick one answer per question.</p>
 
       <div class="q">
@@ -688,9 +790,9 @@ claude</code></pre>
   </section>
 
 
-  <!-- ================= MODULE 6 ================= -->
-  <section class="module" id="m6">
-    <div class="module-kicker"><span class="module-num">MODULE 06</span></div>
+  <!-- ================= MODULE 7 ================= -->
+  <section class="module" id="m7">
+    <div class="module-kicker"><span class="module-num">MODULE 07</span></div>
     <h2>Connectors &amp; MCP: plugging Claude into your tools</h2>
     <p class="lede">Out of the box, Claude only knows what you tell it. <span class="hl">Connectors</span> change that: they let Claude securely link to the apps where your real life lives — email, calendar, files, project boards — so it can read from them and act in them.</p>
 
@@ -716,8 +818,8 @@ claude</code></pre>
       <p><strong>Rule of thumb:</strong> treat connector permissions like apartment keys. Hand them out deliberately, to specific doors, and take them back when they're no longer needed.</p>
     </div>
 
-    <div class="quiz" data-quiz="m6">
-      <div class="quiz-head"><h3>Quick check — Module 06</h3><span class="quiz-score" data-score>0 / 3 answered</span></div>
+    <div class="quiz" data-quiz="m7">
+      <div class="quiz-head"><h3>Quick check — Module 07</h3><span class="quiz-score" data-score>0 / 3 answered</span></div>
       <p class="quiz-sub">Pick one answer per question.</p>
 
       <div class="q">
@@ -756,9 +858,9 @@ claude</code></pre>
     </div>
   </section>
 
-  <!-- ================= MODULE 7 ================= -->
-  <section class="module" id="m7">
-    <div class="module-kicker"><span class="module-num">MODULE 07</span></div>
+  <!-- ================= MODULE 8 ================= -->
+  <section class="module" id="m8">
+    <div class="module-kicker"><span class="module-num">MODULE 08</span></div>
     <h2>Claude Design: from idea to visual</h2>
     <p class="lede">Claude Design is a newer product from Anthropic Labs (launched April 2026, currently a research preview for paid plans). It gives Claude a <span class="hl">visual canvas</span>: describe what you want, get a first version, then refine it like you're working with a designer.</p>
 
@@ -779,14 +881,14 @@ claude</code></pre>
     </ol>
 
     <div class="note">
-      <p><strong>For new grads, the killer use case</strong> is the pitch: a deck for a class project, a startup idea, or an interview presentation. Describe the story, let Design handle the polish, and spend your time on the content.</p>
+      <p><strong>For students, the killer use case</strong> is the pitch: a deck for a class project, a startup idea, or an interview presentation. Describe the story, let Design handle the polish, and spend your time on the content.</p>
     </div>
     <div class="note warn">
       <p><strong>Research preview means moving target:</strong> features, plan availability, and limits can change. Check <a href="https://www.anthropic.com/news">anthropic.com/news</a> for the current state.</p>
     </div>
 
-    <div class="quiz" data-quiz="m7">
-      <div class="quiz-head"><h3>Quick check — Module 07</h3><span class="quiz-score" data-score>0 / 3 answered</span></div>
+    <div class="quiz" data-quiz="m8">
+      <div class="quiz-head"><h3>Quick check — Module 08</h3><span class="quiz-score" data-score>0 / 3 answered</span></div>
       <p class="quiz-sub">Pick one answer per question.</p>
 
       <div class="q">
@@ -825,9 +927,9 @@ claude</code></pre>
     </div>
   </section>
 
-  <!-- ================= MODULE 8 ================= -->
-  <section class="module" id="m8">
-    <div class="module-kicker"><span class="module-num">MODULE 08</span></div>
+  <!-- ================= MODULE 9 ================= -->
+  <section class="module" id="m9">
+    <div class="module-kicker"><span class="module-num">MODULE 09</span></div>
     <h2>The student starter pack: prompts &amp; projects worth stealing</h2>
     <p class="lede">Theory is done — here's a copy-and-paste toolkit. Five prompts that consistently outperform "help me with this," and four first projects matched to the right tool.</p>
 
@@ -878,8 +980,8 @@ compliment me — I want the problems.</code></pre>
       <p><strong>The pattern behind every good prompt here:</strong> a role, a process ("one at a time"), a standard ("don't accept vague answers"), and a guardrail ("don't invent anything"). Steal the structure, not just the words.</p>
     </div>
 
-    <div class="quiz" data-quiz="m8">
-      <div class="quiz-head"><h3>Quick check — Module 08</h3><span class="quiz-score" data-score>0 / 3 answered</span></div>
+    <div class="quiz" data-quiz="m9">
+      <div class="quiz-head"><h3>Quick check — Module 09</h3><span class="quiz-score" data-score>0 / 3 answered</span></div>
       <p class="quiz-sub">Pick one answer per question.</p>
 
       <div class="q">
@@ -918,14 +1020,14 @@ compliment me — I want the problems.</code></pre>
     </div>
   </section>
 
-  <!-- ================= MODULE 9 ================= -->
-  <section class="module" id="m9">
-    <div class="module-kicker"><span class="module-num">MODULE 09</span></div>
+  <!-- ================= MODULE 10 ================= -->
+  <section class="module" id="m10">
+    <div class="module-kicker"><span class="module-num">MODULE 10</span></div>
     <h2>Ethics &amp; responsible use: the part that protects you</h2>
-    <p class="lede">This module isn't a lecture — it's self-defense. The graduates who thrive with AI are the ones who use it in ways they can <span class="hl">stand behind publicly</span>. Five principles cover almost everything.</p>
+    <p class="lede">This module isn't a lecture — it's self-defense. The students who thrive with AI are the ones who use it in ways they can <span class="hl">stand behind publicly</span>. Five principles cover almost everything.</p>
 
     <h3>1. Know the rules where you are</h3>
-    <p>Universities, grad programs, and employers all have AI policies now, and they vary wildly — from "encouraged" to "grounds for dismissal." Read yours before you rely on AI for graded or paid work, and disclose AI use when the policy asks for it. "Everyone does it" is not a defense; "I followed the written policy" is.</p>
+    <p>Universities, individual professors, and employers all have AI policies now, and they vary wildly — from "encouraged" to "grounds for dismissal." Read yours before you rely on AI for graded or paid work, and disclose AI use when the policy asks for it. "Everyone does it" is not a defense; "I followed the written policy" is.</p>
 
     <h3>2. Verify before you submit</h3>
     <p>AI models can <strong>hallucinate</strong> — state false things fluently and confidently, including citations to papers that don't exist. Before anything goes in a paper, application, or report: check that cited sources are real and say what's claimed, recompute key numbers, and confirm names, dates, and quotes. You are the fact-checker of record.</p>
@@ -941,14 +1043,14 @@ compliment me — I want the problems.</code></pre>
     <p>AI learns from human-created data, so it can reflect human biases — in whose perspectives get centered, what "professional" is assumed to look like, or how groups are described. When the stakes involve people (hiring materials, policy writing, anything evaluative), review the output for fairness, and ask Claude directly to surface alternative perspectives.</p>
 
     <h3>5. Keep ownership of your skills</h3>
-    <p>The trap for new grads isn't using AI — it's letting AI use you. If Claude writes everything you "wrote," you stop developing the judgment your career actually runs on. A practical test before submitting anything: <span class="hl">could I explain and defend this work in a meeting, without the chat open?</span> If not, you've delegated the learning, not just the typing.</p>
+    <p>The trap for students isn't using AI — it's letting AI use you. If Claude writes everything you "wrote," you stop developing the judgment your career actually runs on. A practical test before submitting anything: <span class="hl">could I explain and defend this work in a meeting, without the chat open?</span> If not, you've delegated the learning, not just the typing.</p>
 
     <div class="note">
       <p><strong>The source document:</strong> Anthropic publishes a Usage Policy covering what Claude can and can't be used for, at <a href="https://www.anthropic.com/legal/aup">anthropic.com/legal/aup</a>. Worth a skim once — most of it is common sense written down.</p>
     </div>
 
-    <div class="quiz" data-quiz="m9">
-      <div class="quiz-head"><h3>Quick check — Module 09</h3><span class="quiz-score" data-score>0 / 3 answered</span></div>
+    <div class="quiz" data-quiz="m10">
+      <div class="quiz-head"><h3>Quick check — Module 10</h3><span class="quiz-score" data-score>0 / 3 answered</span></div>
       <p class="quiz-sub">Pick one answer per question.</p>
 
       <div class="q">
@@ -991,11 +1093,11 @@ compliment me — I want the problems.</code></pre>
   <section class="finale" id="wrap">
     <div class="module-kicker"><span class="module-num">WRAP-UP</span></div>
     <h2>You're oriented.</h2>
-    <div class="final-score" id="finalScore">0 / 27</div>
+    <div class="final-score" id="finalScore">0 / 30</div>
     <p class="final-msg" id="finalMsg">Answer the quiz questions above to see your final score here.</p>
 
     <h3 style="font-family:var(--display);font-weight:700;font-size:1.22rem;margin-bottom:6px">The one-paragraph summary</h3>
-    <p style="max-width:68ch;margin-bottom:28px">Chat for conversation, Cowork for delegating file work, Code for software, Design for visuals — all the same Claude, behind different doors, and Connectors (built on MCP) plug it into your real tools. Brief it like a smart new colleague: context, examples, format, and "done" criteria. Write context down once (Projects, CLAUDE.md) so you never repeat yourself. Keep backups, scope permissions tightly, review actions before approving them — and verify everything that matters, because the accountability for your work stays with you.</p>
+    <p style="max-width:68ch;margin-bottom:28px">Chat for conversation, Cowork for delegating file work, Code for software, Design for visuals — all the same Claude, behind different doors, and Connectors (built on MCP) plug it into your real tools. Match the model to the task: Haiku when speed matters, Sonnet for everyday work, Opus or Fable when it's genuinely hard. Brief it like a smart new colleague: context, examples, format, and "done" criteria. Write context down once (Projects, CLAUDE.md) so you never repeat yourself. Keep backups, scope permissions tightly, review actions before approving them — and verify everything that matters, because the accountability for your work stays with you.</p>
 
     <h3 style="font-family:var(--display);font-weight:700;font-size:1.22rem;margin-bottom:14px">Keep these bookmarked</h3>
     <div class="resource-grid">
@@ -1011,7 +1113,7 @@ compliment me — I want the problems.</code></pre>
     </div>
 
     <footer>
-      Made as an onboarding guide for new graduates. Product details (plans, availability, limits) change quickly — when in doubt, the official docs above are the source of truth.
+      Made as an onboarding guide for undergraduate students. Product details (plans, availability, limits) change quickly — when in doubt, the official docs above are the source of truth.
     </footer>
   </section>
   </main>
@@ -1019,45 +1121,77 @@ compliment me — I want the problems.</code></pre>
 
 <script>
 (function(){
-  var TOTAL_MODULES = 9;
+  var TOTAL_MODULES = 10;
   var TOTAL_QUESTIONS = document.querySelectorAll('.q').length;
+  var STORAGE_KEY = 'claude101-progress-v1';
   var state = { correct:0, answered:0, doneModules:{} };
   var quizzes = document.querySelectorAll('.quiz');
   var perQuiz = {};
+
+  // saved progress: { "<quizId>:<questionIndex>": <chosenOptionIndex>, ... }
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch(e){ saved = {}; }
+  if(typeof saved !== 'object' || saved === null || Array.isArray(saved)) saved = {};
+
+  function persist(){
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(saved)); } catch(e){ /* private mode etc. — progress just won't persist */ }
+  }
 
   quizzes.forEach(function(quiz){
     var id = quiz.getAttribute('data-quiz');
     var questions = quiz.querySelectorAll('.q');
     perQuiz[id] = { answered:0, correct:0, total:questions.length };
 
-    questions.forEach(function(q){
+    questions.forEach(function(q, qIdx){
       var opts = q.querySelector('.opts');
       var answer = parseInt(opts.getAttribute('data-answer'),10);
       var buttons = opts.querySelectorAll('.opt');
       var feedback = q.querySelector('.feedback');
+      var qKey = id + ':' + qIdx;
+
+      function applyAnswer(idx){
+        // lock question
+        buttons.forEach(function(b,i){
+          b.disabled = true;
+          if(i === answer){ b.classList.add('correct'); }
+          else if(i === idx){ b.classList.add('wrong'); }
+          else { b.classList.add('dim'); }
+        });
+        var isCorrect = idx === answer;
+        feedback.textContent = isCorrect ? feedback.getAttribute('data-good') : feedback.getAttribute('data-bad');
+        feedback.classList.add('show', isCorrect ? 'good' : 'bad');
+
+        perQuiz[id].answered++;
+        if(isCorrect) perQuiz[id].correct++;
+        state.answered++;
+        if(isCorrect) state.correct++;
+        update(id);
+      }
 
       buttons.forEach(function(btn, idx){
         btn.addEventListener('click', function(){
-          // lock question
-          buttons.forEach(function(b,i){
-            b.disabled = true;
-            if(i === answer){ b.classList.add('correct'); }
-            else if(i === idx){ b.classList.add('wrong'); }
-            else { b.classList.add('dim'); }
-          });
-          var isCorrect = idx === answer;
-          feedback.textContent = isCorrect ? feedback.getAttribute('data-good') : feedback.getAttribute('data-bad');
-          feedback.classList.add('show', isCorrect ? 'good' : 'bad');
-
-          perQuiz[id].answered++;
-          if(isCorrect) perQuiz[id].correct++;
-          state.answered++;
-          if(isCorrect) state.correct++;
-          update(id);
+          if(btn.disabled) return;
+          saved[qKey] = idx;
+          persist();
+          applyAnswer(idx);
         });
       });
+
+      // restore a previously saved answer
+      if(typeof saved[qKey] === 'number' && saved[qKey] >= 0 && saved[qKey] < buttons.length){
+        applyAnswer(saved[qKey]);
+      }
     });
   });
+
+  var resetBtn = document.getElementById('resetProgress');
+  if(resetBtn){
+    resetBtn.addEventListener('click', function(){
+      if(!confirm('Clear your saved quiz progress and start over?')) return;
+      try { localStorage.removeItem(STORAGE_KEY); } catch(e){}
+      location.reload();
+    });
+  }
 
   function update(id){
     var pq = perQuiz[id];

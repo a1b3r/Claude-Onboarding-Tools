@@ -1,7 +1,7 @@
 # Prompt Library
 
-> 📖 Pairs with [Module 03 (Prompting)](../guide/index.html#m3) and
-> [Module 08 (Starter pack)](../guide/index.html#m8) of the guide.
+> 📖 Pairs with [Module 04 (Prompting)](../guide/index.html#m4) and
+> [Module 09 (Starter pack)](../guide/index.html#m9) of the guide.
 
 Every template here follows the same four-part pattern. Steal the structure, not just
 the words:
@@ -17,7 +17,7 @@ the words:
 - Attach the relevant file (resume, draft, notes) in the same message.
 - If the first response misses, don't restart: reply with what to change.
 - Reusing a template often? Put it in a **Project**'s custom instructions so it loads
-  automatically (guide, Module 02).
+  automatically (guide, Module 03).
 
 ## The files
 

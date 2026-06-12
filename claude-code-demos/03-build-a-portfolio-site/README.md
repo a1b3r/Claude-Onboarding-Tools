@@ -9,7 +9,7 @@ projects start. Budget 60–90 minutes.
 
 ## Optional warm-up: design first
 
-If you have access to Claude Design (guide, Module 07), prototype the look there first
+If you have access to Claude Design (guide, Module 08), prototype the look there first
 and export/screenshot it. Showing Claude Code a picture of the target beats describing
 it in words.
 

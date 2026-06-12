@@ -1,6 +1,6 @@
 # Prompts: Writing & Editing
 
-> 📖 Pairs with [Module 03](../guide/index.html#m3). Golden rule: Claude is a better
+> 📖 Pairs with [Module 04](../guide/index.html#m4). Golden rule: Claude is a better
 > *editor of your draft* than ghostwriter of your ideas.
 
 ## The tough editor

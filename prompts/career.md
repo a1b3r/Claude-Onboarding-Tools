@@ -1,6 +1,6 @@
 # Prompts: Career & Job Search
 
-> 📖 Pairs with [Module 08](../guide/index.html#m8). Tip: build a **job-search Project**
+> 📖 Pairs with [Module 09](../guide/index.html#m9). Tip: build a **job-search Project**
 > (resume + voice instructions uploaded once) and run these inside it.
 
 ## The honest resume tailor

@@ -1,6 +1,6 @@
 # FAQ — Claude Cowork
 
-> 📖 Pairs with [Module 04](../guide/index.html#m4).
+> 📖 Pairs with [Module 05](../guide/index.html#m5).
 
 ## "I can't find Cowork / don't have access"
 Cowork lives in the Claude **desktop app** (not the website) and availability varies

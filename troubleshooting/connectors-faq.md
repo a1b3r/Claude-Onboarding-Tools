@@ -1,6 +1,6 @@
 # FAQ — Connectors & MCP
 
-> 📖 Pairs with [Module 06](../guide/index.html#m6).
+> 📖 Pairs with [Module 07](../guide/index.html#m7).
 
 ## "Authorization fails / the connector won't connect"
 (1) Pop-up blockers often eat the sign-in window — allow pop-ups for claude.ai and
@@ -23,7 +23,7 @@ Stop and review what happened in the conversation — every action Claude takes 
 visible there. Going forward: approve actions individually rather than broadly, and
 be extra careful when Claude is reading untrusted content (web pages, forwarded
 emails) while connectors are live — that's the prompt-injection scenario from
-Module 06. You can disconnect any connector instantly in settings.
+Module 07. You can disconnect any connector instantly in settings.
 
 ## "Is connecting X safe?"
 The questions to ask: Do I trust the connector's publisher? Does it request the
